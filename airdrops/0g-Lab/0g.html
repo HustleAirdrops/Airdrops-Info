@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🌟 0G-Lab Airdrop Task List 🚀 🌟</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Orbitron and Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #0D1B2A, #1B263B);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+    }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 1rem;
+      padding: 2rem;
+      margin: 1.5rem 0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .glass-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3), 0 0 15px rgba(0,255,255,0.5);
+    }
+    .glass-card h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 700;
+      color: #00FFFF;
+      font-size: 1.875rem;
+    }
+    .glass-card h3 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      color: #E0E0E0;
+      font-size: 1.25rem;
+    }
+    .glass-card ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+      color: #D1D5DB;
+    }
+    .glass-card ul li {
+      margin-bottom: 0.5rem;
+    }
+    .glass-card a {
+      color: #00FFFF;
+      text-decoration: underline;
+      transition: color 0.3s ease;
+    }
+    .glass-card a:hover {
+      color: #9D4EDD;
+    }
+    .glass-card a.btn {
+      color: white;
+      font-weight: bold;
+      padding: 0.5rem 1.5rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s ease, transform 0.3s ease;
+      margin: 0.5rem 0;
+    }
+    .glass-card a.btn:hover {
+      transform: scale(1.05);
+    }
+    .blue-btn {
+      background: linear-gradient(45deg, #3B82F6, #8B5CF6);
+    }
+    .blue-btn:hover {
+      background: linear-gradient(45deg, #8B5CF6, #3B82F6);
+    }
+    .green-btn {
+      background: linear-gradient(45deg, #10B981, #34D399);
+    }
+    .green-btn:hover {
+      background: linear-gradient(45deg, #34D399, #10B981);
+    }
+    .yellow-btn {
+      background: linear-gradient(45deg, #F59E0B, #FBBF24);
+    }
+    .yellow-btn:hover {
+      background: linear-gradient(45deg, #FBBF24, #F59E0B);
+    }
+    .purple-btn {
+      background: linear-gradient(45deg, #8B5CF6, #A78BFA);
+    }
+    .purple-btn:hover {
+      background: linear-gradient(45deg, #A78BFA, #8B5CF6);
+    }
+    .glass-card p {
+      color: #D1D5DB;
+      margin-bottom: 1rem;
+    }
+    .glass-card table {
+      width: 100%;
+      border-collapse: collapse;
+      color: #D1D5DB;
+    }
+    .glass-card th, .glass-card td {
+      padding: 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .glass-card blockquote {
+      border-left: 4px solid #00FFFF;
+      padding-left: 1rem;
+      color: #FFFF99;
+      margin: 1rem 0;
+      font-style: italic;
+    }
+    .fade-in {
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .delay-0 { animation-delay: 0s; }
+    .delay-1 { animation-delay: 0.2s; }
+    .delay-2 { animation-delay: 0.4s; }
+    .delay-3 { animation-delay: 0.6s; }
+    .delay-4 { animation-delay: 0.8s; }
+    .delay-5 { animation-delay: 1.0s; }
+    .note-card {
+      background: rgba(255, 165, 0, 0.1);
+      border: 1px solid #FFA500;
+    }
+    .back-btn {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: linear-gradient(45deg, #3B82F6, #8B5CF6);
+    }
+    .back-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(0,255,255,0.5);
+      background: linear-gradient(45deg, #8B5CF6, #3B82F6);
+    }
+  </style>
+</head>
+<body class="text-white px-6 py-12 bg-opacity-90">
+  <!-- Back to Menu Button -->
+  <a href="../../AirdropDashboard.html" class="back-btn fade-in delay-0">
+    <i class="fas fa-arrow-left"></i> Back to Menu
+  </a>
+
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-6xl font-bold text-center text-pink-500 mb-6 drop-shadow-lg fade-in delay-0">🌟 0G-Lab Airdrop Task List 🚀 🌟</h1>
+    <p class="text-center text-xl text-gray-300 mb-10 font-medium fade-in delay-1">Complete the tasks below to earn rewards! 🚀</p>
+
+    <!-- Intro Section -->
+    <div class="glass-card fade-in delay-1">
+      <h2 class="text-3xl mb-3"><i class="fas fa-info-circle mr-2 text-blue-400"></i>Welcome</h2>
+      <p>Welcome to the <strong>0G-Lab</strong> airdrop tasks! Complete the following tasks to earn rewards. Make sure to follow the instructions carefully and enjoy the process. 💸</p>
+    </div>
+
+    <!-- Deploy Contracts Section -->
+    <div class="glass-card fade-in delay-2">
+      <h2 class="text-3xl mb-3"><i class="fas fa-file-contract mr-2 text-blue-400"></i>Deploy Contracts ⏳</h2>
+      <a href="https://contracts.mintair.xyz" class="btn blue-btn" target="_blank">Deploy Contracts</a>
+      <h3 class="font-semibold text-gray-200 mb-1">Instructions</h3>
+      <ul class="list-disc pl-6 text-gray-300">
+        <li>Select <strong>0G Galileo Testnet</strong></li>
+        <li>Deploy the <strong>Timer Contract</strong> and <strong>ERC20 Contract</strong>.</li>
+      </ul>
+      <p class="mt-3 text-gray-300"><strong>Type:</strong> Interactions 🛠️</p>
+    </div>
+
+    <!-- Upload Files Section -->
+    <div class="glass-card fade-in delay-3">
+      <h2 class="text-3xl mb-3"><i class="fas fa-upload mr-2 text-green-400"></i>Upload Files 📂</h2>
+      <a href="https://storagescan-galileo.0g.ai/tool" class="btn green-btn" target="_blank">Upload Files</a>
+      <h3 class="font-semibold text-gray-200 mb-1">Instructions</h3>
+      <ul class="list-disc pl-6 text-gray-300">
+        <li>Upload files and complete <strong>5-10 interactions</strong>.</li>
+      </ul>
+      <p class="mt-3 text-gray-300"><strong>Type:</strong> Interactions 🖱️</p>
+    </div>
+
+    <!-- Swap and Liquidity Section -->
+    <div class="glass-card fade-in delay-4">
+      <h2 class="text-3xl mb-3"><i class="fas fa-exchange-alt mr-2 text-yellow-400"></i>Swap and Liquidity 🔄</h2>
+      <a href="https://test.zer0.exchange/swap" class="btn yellow-btn" target="_blank">Swap and Liquidity</a>
+      <h3 class="font-semibold text-gray-200 mb-1">Instructions</h3>
+      <ul class="list-disc pl-6 text-gray-300">
+        <li>Complete at least <strong>5-10 transactions</strong> of Swap and Liquidity.</li>
+        <li>Stay active for <strong>3 days</strong>.</li>
+      </ul>
+      <p class="mt-3 text-gray-300"><strong>Type:</strong> Interactions 💧</p>
+    </div>
+
+    <!-- Complete Tasks Section -->
+    <div class="glass-card fade-in delay-5">
+      <h2 class="text-3xl mb-3"><i class="fas fa-check-circle mr-2 text-green-400"></i>Complete Tasks ✅</h2>
+      <a href="https://conft.app/" class="btn green-btn" target="_blank">Complete Tasks</a>
+      <h3 class="font-semibold text-gray-200 mb-1">Instructions</h3>
+      <ul class="list-disc pl-6 text-gray-300">
+        <li>Complete all tasks and interactions on the site.</li>
+      </ul>
+      <p class="mt-3 text-gray-300"><strong>Type:</strong> Interactions 📋</p>
+    </div>
+
+    <!-- Join Discord Section -->
+    <div class="glass-card fade-in delay-6">
+      <h2 class="text-3xl mb-3"><i class="fab fa-discord mr-2 text-purple-400"></i>Join Discord 💬</h2>
+      <a href="https://discord.gg/0glabs" class="btn purple-btn" target="_blank">Join Discord</a>
+      <h3 class="font-semibold text-gray-200 mb-1">Instructions</h3>
+      <ul class="list-disc pl-6 text-gray-300">
+        <li>Join the Discord server and get the <strong>0G Role</strong> by adding <strong>{ (Ø,G) }</strong> in your profile name.</li>
+      </ul>
+      <p class="mt-3 text-gray-300"><strong>Type:</strong> Once 🧑‍🤝‍🧑</p>
+    </div>
+
+    <!-- Important Notes Section -->
+    <div class="glass-card note-card fade-in delay-6">
+      <h2 class="text-3xl mb-3"><i class="fas fa-exclamation-triangle mr-2 text-yellow-500"></i>Important Notes</h2>
+      <ul class="list-disc pl-6 text-gray-300">
+        <li>Stay active and check the tasks regularly for updates.</li>
+        <li>Good luck and happy hunting! 🎉</li>
+        <li>Make sure to stay active for the required periods to maximize your rewards. 🌟</li>
+      </ul>
+      <p class="mt-4 text-center text-green-400 text-lg font-semibold">Good luck, and happy hunting! 🎉</p>
+    </div>
+  </div>
+</body>
+</html>
